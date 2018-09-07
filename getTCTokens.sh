@@ -20,6 +20,3 @@ curl -s -X POST \
         "grant_type": "password",
         "clientId": "'${TC_CLIENT_ID}'"
  }'>tmpTCTokens.json
-
-printf "\nTC_ACCESS_TOKEN=${TC_ACCESS_TOKEN} \n"
-printf "\nTC_REFRESH_TOKEN=${TC_REFRESH_TOKEN} \n\n"
