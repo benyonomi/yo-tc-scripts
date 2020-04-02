@@ -22,15 +22,15 @@ printf "\nYO_REFRESH_TOKEN=${YO_REFRESH_TOKEN} \n\n"
 EPOCH_TIME=`date +%s`
 
 #Create Charter Account
-printf "Creating Charter account...\n"
+printf "Creating 3rd party account...\n"
 curl -s -X POST \
   https://api.staging.yonomi.co/devices \
   -H 'Authorization: Bearer '${YO_ACCESS_TOKEN} \
   -H 'Cache-Control: no-cache' \
   -H 'Content-Type: application/json' \
   -d '{ 
-    "name": "Charter Account",
-    "type": "charter_account",
+    "name": "3rd party Account",
+    "type": "3rd_party_account",
     "expires_in": "86400000",
     "is_authorized": true,
     "credentials": {
